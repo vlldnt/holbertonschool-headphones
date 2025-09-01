@@ -31,19 +31,7 @@ Each section is built respecting the structure, colors, and typography of the or
 ## Figma
 [View the Figma mockup](https://www.figma.com/design/lG0E38Te1KoOC4HrprpXNB/Holberton-School---Headphone-company?node-id=0-1&t=UmpQ6xqqvLlhYJfn-1)
 
-## Interactions
-- Link hover/active: `#FF6565`
-- Button hover/active: `opacity: 0.9`
-- Max content width: `1000px` centered
-
-## Getting Started
-1. Clone the repository
-2. Open the HTML files in your browser
 
 ## Authors
-- Design: Nicolas Philippot
-- Development: [Your Name]
-
----
-
-> **Note**: This README includes a preview and a dummy Figma link to be replaced.
+- Design: Vieilledent Adrien
+- Development: Vieilledent Adrien
