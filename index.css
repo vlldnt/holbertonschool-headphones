@@ -1,0 +1,205 @@
+/* Variables */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('font/SourceSansPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --text-color: white;
+    --background-headphones: #071629;
+    --main-font: 'Source Sans Pro', Arial, sans-serif;
+    --button-color: #FF6565;
+    --button-size: 0.87rem;
+    --title-size: 2rem;
+}
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    color: var(--text-color);
+}
+
+body {
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+}
+
+ol, ul {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+/* General */
+.buttons {
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: var(--button-color);
+    font-size: var(--button-size);
+    font-weight: bold;
+}
+
+/* Header */
+.header {
+    position: absolute;
+    width: 100%;
+    max-width: 1400px;
+    box-sizing: border-box;
+    padding: 1.5rem 5rem;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header-container img {
+    width: 161px;
+    height: 32px;
+}
+
+/* Menu desktop */
+.header-list {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.header-list-element {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Hamburger button (hidden by default) */
+.menu-btn {
+    display: none;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-icon .navicon {
+    background: white;
+    display: block;
+    width: 1.2rem;
+    height: 0.10rem;
+    position: relative;
+    transition: background 0.2s ease-out;
+}
+
+.menu-icon .navicon::before,
+.menu-icon .navicon::after {
+    content: "";
+    display: block;
+    width: 1.6rem;
+    height: 0.10rem;
+    position: absolute;
+    background: white;
+    transition: all 0.2s ease-out;
+}
+
+.menu-icon .navicon::before {
+    top: 0.5rem;
+}
+
+.menu-icon .navicon::after {
+    top: -0.5rem;
+}
+
+/* Mobile menu (hidden by default) */
+.navbar-menu {
+    display: none;
+    flex-direction: column;
+    background: var(--background-headphones);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.navbar-menu li {
+    padding: 1rem 0;
+}
+
+/* Show mobile menu when checkbox is checked */
+.menu-btn:checked ~ .navbar-menu {
+    display: flex;
+}
+
+/* Animate hamburger to X */
+.menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/* Responsive: hide desktop menu, show hamburger */
+@media (max-width: 767px) {
+    .header {
+        padding: 1.5rem 1.5rem;
+    }
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+    }
+    .menu-icon {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        z-index: 2;
+    }
+    .header-logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 161px;
+        height: 32px;
+        object-fit: contain;
+        z-index: 1;
+    }
+    .header-menu {
+        display: none;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 8em 0 0 0;
+    background-image: url(assets/images/headphones_hero_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 640px;
+    width: 100%;
+    max-width: 1440px;
+}
