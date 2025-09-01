@@ -132,9 +132,11 @@ li a {
 .navbar-menu {
     display: none;
     flex-direction: column;
-    background: var(--background-headphones);
+    background: transparent;
     text-align: center;
     padding: 1rem 0;
+    position: static;
+    font-weight: bold;
 }
 
 .navbar-menu li {
@@ -167,7 +169,7 @@ li a {
         padding: 1.5rem 1.5rem;
     }
     .header-container {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         position: relative;
     }
@@ -179,16 +181,28 @@ li a {
     }
     .header-logo {
         position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        margin: 0 auto;
         width: 161px;
         height: 32px;
         object-fit: contain;
         z-index: 1;
+        display: block;
     }
     .header-menu {
         display: none;
+    }
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        gap: 1.5rem;
+        background: transparent;
+        padding: 1rem 2rem;
+        position: static;
+        width: 100%;
+        margin: 0;
+    }
+    .menu-btn:checked ~ .navbar-menu {
+        display: flex;
     }
 }
 
