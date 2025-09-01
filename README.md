@@ -4,9 +4,9 @@
 
 
 <div align="center">
-	<img src="images/01_headphones_desktop@2x.png" alt="Desktop preview" width="200" style="margin:8px;" />
-	<img src="images/01_headphones_tablet@2x.png" alt="Tablet preview" width="120" style="margin:8px;" />
-	<img src="images/01_headphones_mobile@2x.png" alt="Mobile preview" width="80" style="margin:8px;" />
+	<img src="images/01_headphones_desktop@2x.png" alt="Desktop preview" width="300" style="margin:8px;" />
+	<img src="images/01_headphones_tablet@2x.png" alt="Tablet preview" width="180" style="margin:8px;" />
+	<img src="images/01_headphones_mobile@2x.png" alt="Mobile preview" width="100" style="margin:8px;" />
 </div>
 
 ## Description
