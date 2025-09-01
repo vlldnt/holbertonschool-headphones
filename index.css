@@ -163,6 +163,7 @@ li a {
     top: 0;
 }
 
+
 /* Responsive: hide desktop menu, show hamburger */
 @media (max-width: 767px) {
     .header {
@@ -194,15 +195,12 @@ li a {
     .navbar-menu {
         display: none;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: .5rem;
         background: transparent;
         padding: 1rem 2rem;
         position: static;
         width: 100%;
         margin: 0;
-    }
-    .menu-btn:checked ~ .navbar-menu {
-        display: flex;
     }
 }
 
@@ -216,4 +214,8 @@ li a {
     height: 640px;
     width: 100%;
     max-width: 1440px;
+}
+
+.hero-container {
+    margin-top: 150px;
 }
