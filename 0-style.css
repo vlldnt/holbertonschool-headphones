@@ -261,7 +261,7 @@ li a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: calc(100vh - 8rem);
+    padding-bottom: 10rem;
     width: 100%;
     max-width: 1400px;
     display: flex;

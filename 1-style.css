@@ -77,7 +77,7 @@ li a {
 .titles {
     font-size: var(--title-size);
     font-weight: 600;
-    margin: 6.875rem 0 .8rem 0;
+    margin: 0 0 .8rem 0;
 }
 .descriptions {
     max-width: 637px;
@@ -261,7 +261,6 @@ li a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: calc(100vh - 8rem);
     width: 100%;
     max-width: 1400px;
     display: flex;
@@ -269,7 +268,7 @@ li a {
     align-items: center;
     justify-content: center;
     text-align: center;
-
+    padding-bottom: 10rem;
 }
 
 .hero-container {
@@ -324,35 +323,28 @@ li a {
 .about-section {
     max-width: 1000px;
     text-align: center;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 6.875rem 0;
 }
 
 .about-title {
     color: var(--text-black);
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
+    
 }
 
 .about-description {
     color: var(--text-black);
-    margin-bottom: 4rem;
-
-}
-
-.about-details {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    width: 100%;
-    padding: 2rem;
+    margin-bottom: 4rem
 }
 
 .about-cards {
@@ -362,6 +354,12 @@ li a {
     justify-content: center;
     width: 193px;
     gap: 2rem;
+}
+
+.about-cards {
+    flex: 1 1 25%;
+    width: 190px;
+    box-sizing: border-box;
 }
 
 .about-card-image {
@@ -383,3 +381,33 @@ li a {
 .about-card-description {
     line-height: 1.625rem;
 }
+
+.about-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    justify-items: center;
+    width: 100%;
+}
+
+.about-cards {
+    width: 100%;
+    max-width: 190px;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 767px) {
+    .about-details {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-details {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
