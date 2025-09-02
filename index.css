@@ -1,8 +1,22 @@
 /* Variables */
 @font-face {
     font-family: 'Source Sans Pro';
-    src: url('font/SourceSansPro-Regular.otf') format('opentype');
+    src: url('assets/font/SourceSansPro-Regular.otf') format('opentype');
     font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('assets/font/SourceSansPro-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('assets/font/SourceSansPro-Semibold.otf') format('opentype');
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -20,7 +34,6 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
     color: var(--text-color);
@@ -34,6 +47,10 @@ body {
     align-items: center;
 }
 
+html {
+    font-size: 16px;
+}
+
 ol, ul {
     list-style: none;
 }
@@ -44,12 +61,27 @@ li a {
 
 /* General */
 .buttons {
-    padding: 1rem;
-    border-radius: 1.5rem;
-    background-color: var(--button-color);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background: #ff6565;
     font-size: var(--button-size);
-    font-weight: bold;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
+
+.buttons:hover {
+    background: rgb(255, 101, 101, 0.9);
+}
+
+.buttons:active {
+    transform: translateY(2px);
+    transition: all 0.1s ease-in-out;
+}
+
 
 /* Header */
 .header {
@@ -84,7 +116,7 @@ li a {
 
 .header-list-element {
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /* Hamburger button (hidden by default) */
@@ -138,6 +170,7 @@ li a {
     padding: 1rem 0;
     position: static;
     font-weight: bold;
+    transition: max-height .3s ease-in-out, opacity .4s ease-in-out;
 }
 
 .navbar-menu li {
@@ -146,7 +179,10 @@ li a {
 
 /* Show mobile menu when checkbox is checked */
 .menu-btn:checked ~ .navbar-menu {
-    display: flex;
+    display: block;
+    opacity: 1;
+    max-height: 500px;
+    pointer-events: none;
 }
 
 /* Animate hamburger to X */
@@ -207,16 +243,70 @@ li a {
 
 /* Hero Section */
 .hero-section {
-    padding: 8em 0 0 0;
+    padding: 8rem 0 0 0;
     background-image: url(assets/images/headphones_hero_1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 640px;
+    min-height: calc(100vh - 8rem);
     width: 100%;
-    max-width: 1440px;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
 }
 
 .hero-container {
-    margin-top: 150px;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.hero-title {
+    font-size: var(--title-size);
+    font-weight: 600;
+    margin: 6rem 0 .8rem 0;
+}
+
+.hero-subtitle {
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.hero-container .buttons {
+    margin-bottom: 3rem;
+}
+
+.hero-description {
+    max-width: 637px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 0;
+}
+
+@media (max-width: 767px) {
+    .hero-container {
+        max-width: 767px;
+        width: 100%
+    }
+
+    .hero-title {
+        margin: 7rem 0 0.8rem 0;
+    }
+
+    .hero-subtitle {
+        margin: 0 3rem 3rem 3rem; 
+    }
+
+    .hero-description {
+        padding: 0 1.3rem;
+    }
+}
+
+/*  */
