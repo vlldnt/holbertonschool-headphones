@@ -215,7 +215,7 @@ li a {
 
 
 /* Responsive: hide desktop menu, show hamburger */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .header {
         padding: 1.5rem 1.5rem;
     }
@@ -297,9 +297,9 @@ li a {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .hero-container {
-        max-width: 767px;
+        max-width: 768px;
         width: 100%;
     }
 

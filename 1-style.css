@@ -215,7 +215,7 @@ li a {
 
 
 /* Responsive: hide desktop menu, show hamburger */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .header {
         padding: 1.5rem 1.5rem;
     }
@@ -296,9 +296,9 @@ li a {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .hero-container {
-        max-width: 767px;
+        max-width: 768px;
         width: 100%;
     }
 
@@ -338,13 +338,13 @@ li a {
 
 .about-title {
     color: var(--text-black);
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
     
 }
 
 .about-description {
     color: var(--text-black);
-    margin-bottom: 4rem
+    margin-bottom: 6.875rem
 }
 
 .about-cards {
@@ -353,7 +353,7 @@ li a {
     align-items: center;
     justify-content: center;
     width: 193px;
-    gap: 2rem;
+    gap: 1.7rem;
 }
 
 .about-cards {
@@ -382,7 +382,7 @@ li a {
     line-height: 1.625rem;
 }
 
-.about-details {
+.details {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
@@ -392,22 +392,22 @@ li a {
 
 .about-cards {
     width: 100%;
-    max-width: 190px;
+    max-width: 200px;
     box-sizing: border-box;
 }
 
 
-@media (max-width: 767px) {
-    .about-details {
+@media (max-width: 768px) {
+    .details {
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        gap: 5rem;
     }
 }
 
 @media (max-width: 480px) {
-    .about-details {
+    .details {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 5rem;
     }
 }
 
