@@ -22,6 +22,7 @@
 
 :root {
     --text-color: white;
+    --text-black: black;
     --background-headphones: #071629;
     --main-font: 'Source Sans Pro', Arial, sans-serif;
     --button-color: #FF6565;
@@ -71,6 +72,18 @@ li a {
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.titles {
+    font-size: var(--title-size);
+    font-weight: 600;
+    margin: 6.875rem 0 .8rem 0;
+}
+.descriptions {
+    max-width: 637px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 0;
 }
 
 .buttons:hover {
@@ -283,12 +296,6 @@ li a {
     margin-bottom: 3rem;
 }
 
-.hero-description {
-    max-width: 637px;
-    line-height: 1.5rem;
-    font-size: 1rem;
-    letter-spacing: 0;
-}
 
 @media (max-width: 767px) {
     .hero-container {
@@ -313,4 +320,64 @@ li a {
     }
 }
 
-/*  */
+/* About Section */
+.about-section {
+    max-width: 1000px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title {
+    color: var(--text-black);
+    margin-bottom: 2.5rem;
+}
+
+.about-description {
+    color: var(--text-black);
+    margin-bottom: 4rem;
+
+}
+
+.about-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+.about-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 193px;
+    gap: 2rem;
+}
+
+.about-card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-cards p {
+    color: var(--text-black);
+}
+
+.about-card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+.about-card-description {
+    line
+}
