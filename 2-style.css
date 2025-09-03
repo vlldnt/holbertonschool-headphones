@@ -1,30 +1,8 @@
 /* Variables */
-@font-face {
-    font-family: 'Source Sans Pro';
-    src: url('assets/font/SourceSansPro-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    src: url('assets/font/SourceSansPro-Bold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Source Sans Pro';
-    src: url('assets/font/SourceSansPro-Semibold.otf') format('opentype');
-    font-weight: 600;
-    font-style: normal;
-}
-
 :root {
     --text-color: white;
     --text-black: black;
     --background-headphones: #071629;
-    --main-font: 'Source Sans Pro', Arial, sans-serif;
     --button-color: #FF6565;
     --button-size: 0.87rem;
     --title-size: 2rem;
@@ -42,10 +20,10 @@
 }
 
 body {
+    font-family: 'Source Sans 3', sans-serif;
     line-height: 1;
     display: flex;
     flex-direction: column;
-    font-family: var(--main-font);
     align-items: center;
 }
 
@@ -402,19 +380,20 @@ li a {
 @media (max-width: 768px) {
     .details {
         grid-template-columns: repeat(2, 1fr);
-        gap: 5rem;
+        column-gap: 0;
+        row-gap: 5rem;  
     }
 }
 
 @media (max-width: 480px) {
     .details {
         grid-template-columns: 1fr;
-        gap: 5rem;
+        column-gap: 0;
+        row-gap: 5rem;  
     }
 }
 
 /* Results Section */
-
 .results-section {
     padding: var(--section-padding);
     background-image: url(assets/images/headphones_hero_2.jpg);
@@ -449,7 +428,7 @@ li a {
     justify-content: center;
     align-items: center;
     position: relative;
-    gap: 1.7rem;
+    gap: 1rem;
 }
 
 .results-percent {
@@ -464,3 +443,9 @@ li a {
     color: white;
     margin-top: 0.5rem;
 }
+
+.results-title {
+    font-size: var(--title-size);
+    font-weight: 600;
+}
+
