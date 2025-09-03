@@ -6,7 +6,10 @@
     --button-color: #FF6565;
     --button-size: 0.87rem;
     --title-size: 2rem;
-    --section-padding: 8rem 0;
+    --section-padding: 8.8rem 0;
+    --margin-elements: 6.875rem;
+    --margin-title: 3rem;
+    --line-height: 1.5rem;
 }
 
 /* RESET CSS */
@@ -25,6 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 html {
@@ -60,7 +64,7 @@ li a {
 }
 .descriptions {
     max-width: 637px;
-    line-height: 1.5rem;
+    line-height: var(--line-height);
     font-size: 1rem;
     letter-spacing: 0;
 }
@@ -324,7 +328,7 @@ li a {
 
 .about-description {
     color: var(--text-black);
-    margin-bottom: 6.875rem
+    margin-bottom: var(--margin-elements);
 }
 
 .about-cards {
@@ -359,7 +363,7 @@ li a {
     font-weight: 600;
 }
 .about-card-description {
-    line-height: 1.625rem;
+    line-height: var(--line-height);
 }
 
 .details {
@@ -414,6 +418,15 @@ li a {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 0 4.5rem;
+}
+
+.results-description {
+    margin-bottom: var(--margin-elements);
+}
+
+.results-details {
+    padding: 0 6rem;
 }
 
 .results-cards {
@@ -435,11 +448,11 @@ li a {
     font-size: 2.875rem;
     font-weight: bold;
     color: white;
-    margin: 0;
+    margin: 2.5rem 0 0 0;
 }
 
 .results-text {
-    font-size: 1rem;
+    font-size: 0.875rem;
     color: white;
     margin-top: 0.5rem;
 }
@@ -447,5 +460,6 @@ li a {
 .results-title {
     font-size: var(--title-size);
     font-weight: 600;
+    margin-bottom: var(--margin-title);
 }
 
