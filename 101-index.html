@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="101-style.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -37,41 +38,42 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
-        <div class="hero-container">
-            <h1 class="hero-title">Feel the music like never before</h1>
-            <p class="hero-subtitle">High-quality sound, comfort and style combined</p>
-            <button class="buttons">CALL TO ACTION</button>
-            <p class="hero-description descriptions">Discover headphones designed for true music lovers. With deep bass, clear highs and a lightweight design, our products are built to follow you everywhere. Perfect for working, traveling or simply relaxing at home with your favorite songs</p>
+        <div class="hero-container" data-aos="fade-up">
+            <h1 class="hero-title" data-aos="fade-down">Feel the music like never before</h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">High-quality sound, comfort and style combined</p>
+            <button class="buttons" data-aos="zoom-in" data-aos-delay="200">CALL TO ACTION</button>
+            <p class="hero-description descriptions" data-aos="fade-up" data-aos-delay="300">Discover headphones designed for true music lovers. With deep bass, clear highs and a lightweight design, our products are built to follow you everywhere. Perfect for working, traveling or simply relaxing at home with your favorite songs</p>
         </div>
     </section>
+
     <!-- About Section -->
     <section id="about" class="about-section">
-        <div class="about-container">
-            <h2 class="about-title titles">What we do...</h2>
-            <p class="about-description descriptions">We create premium audio solutions that bring your music to life. From wireless freedom to studio-level sound quality, our mission is to make every listening experience unique and unforgettable. Innovation and design are at the heart of our work</p>
+        <div class="about-container" data-aos="fade-up">
+            <h2 class="about-title titles" data-aos="fade-down">What we do...</h2>
+            <p class="about-description descriptions" data-aos="fade-up" data-aos-delay="100">We create premium audio solutions that bring your music to life. From wireless freedom to studio-level sound quality, our mission is to make every listening experience unique and unforgettable. Innovation and design are at the heart of our work</p>
             <div class="about-details details">
-                <div class="about-cards">
+                <div class="about-cards" data-aos="zoom-in">
                     <div class="about-card-image">
                         <img src="assets/images/sound-frecuency.svg" alt="Sound frequency">
                     </div>
                     <p class="about-card-title">Crystal Clear Audio</p>
                     <p class="about-card-description">Experience balanced sound with powerful bass and detailed highs</p>
                 </div>
-                <div class="about-cards">
+                <div class="about-cards" data-aos="zoom-in" data-aos-delay="100">
                     <div class="about-card-image">
                         <img src="assets/images/video.svg" alt="Video">
                     </div>
                     <p class="about-card-title">Immersive Streaming</p>
                     <p class="about-card-description">Enjoy movies and series with surround sound that feels completely real</p>
                 </div>
-                <div class="about-cards">
+                <div class="about-cards" data-aos="zoom-in" data-aos-delay="200">
                     <div class="about-card-image">
                         <img src="assets/images/music.svg" alt="Music">
                     </div>
                     <p class="about-card-title">Music Everywhere</p>
                     <p class="about-card-description">Take your playlists with you and enjoy music on the go anywhere you want</p>
                 </div>
-                <div class="about-cards">
+                <div class="about-cards" data-aos="zoom-in" data-aos-delay="300">
                     <div class="about-card-image">
                         <img src="assets/images/hearing.svg" alt="Hearing">
                     </div>
@@ -83,23 +85,23 @@
 
     <!-- Results Section -->
     <section id="results" class="results-section">
-        <div class="results-container">
-            <h2 class="results-title">Our results speak for themselves</h2>
-            <p class="results-description descriptions">Thousands of users have already upgraded their listening experience with us From casual music lovers to professionals, our headphones deliver quality and reliability The feedback is clear: better sound means happier moments every day</p>
+        <div class="results-container" data-aos="fade-up">
+            <h2 class="results-title" data-aos="fade-down">Our results speak for themselves</h2>
+            <p class="results-description descriptions" data-aos="fade-up" data-aos-delay="100">Thousands of users have already upgraded their listening experience with us From casual music lovers to professionals, our headphones deliver quality and reliability The feedback is clear: better sound means happier moments every day</p>
             <div class="results-details details">
-                <div class="results-cards cards">
+                <div class="results-cards cards" data-aos="flip-left">
                     <p class="results-percent">+80%</p>
                     <p class="results-text">Better retention</p>
                 </div>
-                <div class="results-cards cards">
+                <div class="results-cards cards" data-aos="flip-left" data-aos-delay="100">
                     <p class="results-percent">+100%</p>
                     <p class="results-text">More engagement</p>
                 </div>
-                <div class="results-cards cards">
+                <div class="results-cards cards" data-aos="flip-left" data-aos-delay="200">
                     <p class="results-percent">+90%</p>
                     <p class="results-text">Stronger loyalty</p>
                 </div>
-                <div class="results-cards cards">
+                <div class="results-cards cards" data-aos="flip-left" data-aos-delay="300">
                     <p class="results-percent">+85%</p>
                     <p class="results-text">Higher satisfaction</p>
                 </div>
@@ -109,35 +111,35 @@
 
     <!-- Contact Section-->
     <section id="contact" class="contact-section">
-        <div class="contact-container">
-            <h2 class="contact-title">Contact us</h2>
+        <div class="contact-container" data-aos="fade-up">
+            <h2 class="contact-title" data-aos="fade-down">Contact us</h2>
             <form action="" class="contact-form">
-                <div class="input-group">
+                <div class="input-group" data-aos="fade-up">
                     <input type="text" id="name" class="form-input" placeholder=" " required>
                     <label class="contact-label" for="name">Name</label>
                 </div>
 
-                <div class="input-group">
+                <div class="input-group" data-aos="fade-up" data-aos-delay="100">
                     <input type="email" id="email" class="form-input" placeholder=" " required>
                     <label class="contact-label" for="email">Email</label>
                 </div>
 
-                <div class="input-group">
+                <div class="input-group" data-aos="fade-up" data-aos-delay="200">
                     <input type="text" id="message" class="form-input" placeholder=" " required>
                     <label class="contact-label" for="message">Your message</label>
                 </div>
             </form>
-            <button class="buttons">CALL TO ACTION</button>
+            <button class="buttons" data-aos="zoom-in">CALL TO ACTION</button>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-logo">
+        <div class="footer-container" data-aos="fade-up">
+            <div class="footer-logo" data-aos="fade-right">
                 <img src="assets/images/logo_headphones.png" alt="Headephones logo">
             </div>
-            <div class="footer-socials">
+            <div class="footer-socials" data-aos="fade-left">
                 <a href="#"><img src="assets/images/Facebook_White.svg" alt="Facebook logo"></a>
                 <a href="#"><img src="assets/images/Twitter_White.svg" alt="Twitter logo"></a>
                 <a href="#"><img src="assets/images/Instagram_White.svg" alt="Instagram logo"></a>
@@ -145,5 +147,13 @@
         </div>
         <p class="copyright">©headphones 2020</p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- https://github.com/michalsnik/aos -->
+    <script>    
+    AOS.init({
+        duration: 600,
+    });
+</script>
 </body>
 </html>
