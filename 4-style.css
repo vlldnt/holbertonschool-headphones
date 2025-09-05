@@ -474,7 +474,7 @@ li a {
     color: rgb(255, 255, 255, 0.35);
 }
 
-
+/* Responsive styles for tablets and small desktops (max-width: 768px) */
 @media (max-width: 768px) {
     .header {
         padding: 1.5rem 1.5rem;
@@ -539,20 +539,7 @@ li a {
     }
 }
 
-
-@media (max-width: 375px) {
-    .contact-form {
-        width: 310px;
-    }
-    .results-container {
-        padding: 0 1rem;
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-}
-
-
+/* Responsive styles for mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
     .details {
         grid-template-columns: 1fr;
@@ -563,5 +550,18 @@ li a {
         display: flex;
         flex-direction: column;
         gap: 3rem;
+    }
+}
+
+/* Exra small mobile devices (max-width: 375px) */
+@media (max-width: 375px) {
+    .contact-form {
+        width: 310px;
+    }
+    .results-container {
+        padding: 0 1rem;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 }
